@@ -8,11 +8,7 @@ else:
 if last_digit > 5:
     print("Last digit of", number, "is", last_digit, "and is greater than 5")
 elif last_digit == 0:
-    print("Last digit of", number, "is", last_digit, "and is 0")
+    print("Last digit of", number, "is", last_digit, "and is 0"
 else:
-<<<<<<< HEAD
     print("Last digit of", number, "is", last_digit, "and is ","less than 6 and
      not 0")
-=======
-    print("Last digit of", number, "is", last_digit, "and is less than 6 and not 0")
->>>>>>> d07c1bfb6eda52cb5377c5af40bd844b7c5f69b1
