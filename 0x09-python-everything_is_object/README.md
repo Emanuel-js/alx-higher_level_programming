@@ -1,0 +1,2 @@
+# python
+Everything is object
