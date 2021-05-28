@@ -1,0 +1,49 @@
+""" function that prints My name is <first name> <last name> """
+
+""" Import function """
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+
+""" S U C C E S S  C A S E S """
+
+>>> say_my_name("Melkin", "Brand")
+My name is Melkin Brand
+
+>>> say_my_name("Nicolas")
+My name is Nicolas 
+
+>>> say_my_name("", "")
+My name is  
+
+>>> say_my_name(":)", ":(")
+My name is :) :(
+
+>>> say_my_name("Juan", "")
+My name is Juan 
+
+>>> say_my_name("", "Valentina")
+My name is  Valentina
+
+>>> say_my_name("Rosa", "Melano")
+My name is Rosa Melano
+
+>>> say_my_name("Mohamed", "Larraja")
+My name is Mohamed Larraja
+
+
+""" F A I L U R E   C A S E S """
+
+>>> say_my_name(9, "Larraja")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name("Isabella", 9)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+>>> say_my_name()
+Traceback (most recent call last):
+...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
