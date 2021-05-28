@@ -1,0 +1,69 @@
+""" function that prints a square with the character # """
+
+""" Import function """
+>>> print_square = __import__('4-print_square').print_square
+
+
+""" S U C C E S S  C A S E S """
+
+>>> print_square(2)
+##
+##
+
+>>> print_square(0)
+
+>>> print_square(3)
+###
+###
+###
+
+>>> print_square(1)
+#
+
+
+""" F A I L U R E   C A S E S """
+
+>>> print_square(None)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square(':)')
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square((1, 2))
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square([1, 2])
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square({1: 2})
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+>>> print_square(-1)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+>>> print_square(-11)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+>>> print_square(1.3)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
