@@ -1,0 +1,122 @@
+""" function that prints a text with 2 new lines """
+
+""" Import function """
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+""" S U C C E S S  C A S E S """
+
+>>> text_indentation("Hello. World")
+Hello.
+<BLANKLINE>
+World
+
+>>> text_indentation("Isabella?Zorrilla")
+Isabella?
+<BLANKLINE>
+Zorrilla
+
+>>> text_indentation("Never. say never. :)")
+Never.
+<BLANKLINE>
+say never.
+<BLANKLINE>
+:
+<BLANKLINE>
+)
+
+>>> text_indentation("Valentina: Gasca")
+Valentina:
+<BLANKLINE>
+Gasca
+
+>>> text_indentation("???")
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+
+
+>>> text_indentation("???:).:)")
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+).
+<BLANKLINE>
+:
+<BLANKLINE>
+)
+
+>>> text_indentation(".")
+.
+<BLANKLINE>
+
+>>> text_indentation("El hipopótamo Hipo está con hipo, ¿quién le quita el hipo al hipopótamo Hipo?")
+El hipopótamo Hipo está con hipo, ¿quién le quita el hipo al hipopótamo Hipo?
+<BLANKLINE>
+
+>>> text_indentation("El hipopótamo Hipo está con hipo.. :quién le quita el hipo al hipopótamo Hipo?")
+El hipopótamo Hipo está con hipo.
+<BLANKLINE>
+.
+<BLANKLINE>
+:
+<BLANKLINE>
+quién le quita el hipo al hipopótamo Hipo?
+<BLANKLINE>
+
+>>> text_indentation("El hipopótamo Hipo está con hipo, ¿quién le quita el hipo al hipopótamo Hipo?")
+El hipopótamo Hipo está con hipo, ¿quién le quita el hipo al hipopótamo Hipo?
+<BLANKLINE>
+
+>>> text_indentation(".:$90.")
+.
+<BLANKLINE>
+:
+<BLANKLINE>
+$90.
+<BLANKLINE>
+
+>>> text_indentation("{12: 10}")
+{12:
+<BLANKLINE>
+10}
+
+""" F A I L U R E   C A S E S """
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation(98)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation(98.4)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation({98.4: 12})
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation((98.4, 12))
+Traceback (most recent call last):
+...
+TypeError: text must be a string
