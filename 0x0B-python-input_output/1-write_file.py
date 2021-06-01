@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-""" Modules """
+""" Module """
 
 
-def number_of_lines(filename=""):
-    """ count lines of file """
-
-    line_num = 0
-    with open(filename, encoding="utf-8") as f:
-        line = f.readlines()
-        line_num = len(line)
+def write_file(filename="", text=""):
+    """ write file """
+    with open(filename, 'w', encoding="utf-8") as f:
+        f.write(text)
     f.close()
-    return line_num
+    return len(text)
